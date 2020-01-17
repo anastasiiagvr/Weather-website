@@ -1,0 +1,220 @@
+@media screen and (max-width: 600px) {
+    .search {
+        min-width: 300px;
+    }
+    .search__bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-icon {
+        display: none;
+    }
+    .search__btn {
+        border-radius: 5px;
+        width: 294px;
+    }
+    .search__title {
+        margin-top: 145px;
+    }
+    .title {
+        font-size: 25px;
+        max-width: 294px;
+        line-height: 35px;
+    }
+    .report {
+        padding-bottom: 10px;
+    }
+    .report__data .temperature span {
+        padding-left: 30%;
+    }
+    .report__data {
+        flex-direction: column;
+    }
+    .report__data .bg-color, .report__data .additional-info {
+        min-height: 300px;
+        width: 300px;
+    }
+    .search__bar input#weather-search {
+        height: 70px;
+    }
+    .footer .wrapper {
+        padding: 0 !important;
+    }
+    .weather-info__title {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .menu {
+        overflow-x: hidden;
+        padding: 30px 10px 180px 10px !important;
+    }
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu__links {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        height: 90px;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        min-width: 100%;
+    }
+    .menu__links li {
+        margin-top: 10px;
+    }
+    .small {
+        transform: translateX(0%);
+    }
+    #hamburger {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20px;
+        width: 30px;
+        cursor: pointer;
+    }
+    #hamburger:before,
+    #hamburger:after,
+    #hamburger span {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+    }
+    #hamburger:before {
+        top: 0;
+    }
+    #hamburger:after {
+        top: 20px;
+    }
+    #hamburger span {
+        top: 50%
+    }
+    .report__data .temperature {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .report__data {
+        background-position: top 158px right 17px;
+    }
+    .search__bar input#weather-search {
+        min-width: 294px;
+    }
+    .search__btn {
+        display: block;
+    }
+    .weather-info__comment {
+        padding: 10px;
+    }
+    .collapsible .text {
+        margin-right: 55px;
+    }
+    .footer {
+        max-height: 100px;
+        padding-bottom: 20px;
+    }
+    .footer .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1610px) {
+    /* header */
+    .menu {
+        padding: 30px 10px 100px 10px;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        max-width: 792px;
+        margin: 0px auto;
+    }
+    .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .search__title,
+    .faq__title {
+        padding: 0 10px;
+        margin-top: 30px;
+        margin-bottom: 33px;
+        text-align: center;
+    }
+    .search__text {
+        padding: 0 10px;
+        margin-bottom: 39px;
+        max-width: 400px;
+        text-align: center;
+    }
+    /* showcase */
+    .showcase {
+        overflow-x: hidden;
+    }
+    .weather-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .weather-info__comment,
+    .weather-info__image {
+        margin: 0 auto;
+    }
+    .weather-info__btn {
+        margin: 20px 0;
+        float: none;
+    }
+    .weather-info__image {
+        max-width: 100%;
+    }
+    .weather-info__image img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* faq */
+    .wrapper {
+        max-width: 1000px;
+    }
+    /* partners */
+    .partners {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 50px;
+        padding-bottom: 40px;
+    }
+    .partners__item {
+        margin: 15px;
+    }
+    .collapsible {
+        margin: 20px 10px;
+
+    }
+    .active {
+        margin: 20px 10px 0 10px;
+    }
+    .collapsible-content {
+        margin: 0 10px;
+    }
+    .footer .wrapper {
+        padding: 20px 10px 0 10px;
+    }
+}
