@@ -29,7 +29,6 @@ function getData(object, str, str2) {
                     }
                 }
             } else {
-
                 for (let x in res) {
                     if (x == str2) {
                         return res[x];
@@ -111,6 +110,16 @@ function searchWeather() {
                 } else {
                     docSnow.innerHTML = '--';
                 }
+
+                // date + city
+                for (let itm in obj) {
+                    if (itm == 'name') {
+                        let cityName = obj[itm];
+                    }
+                }
+                let countyCode = getData(obj, 'sys', 'country')
+                let docTitle = document.querySelector('.date');
+                docTitle.innerHTML = getCurrentDate() + `, ${cityName.charAt(0).toUpperCase() + cityName.slice(1)}, ${countyCode}`;
             }
         }
     }
@@ -136,17 +145,24 @@ window.onscroll = function() {
 
 // collapsible 
 
-function arrowUp (icon) {
+function arrowUp(icon) {
     icon.classList.toggle('fa-angle-up');
     icon.parentNode.parentNode.classList.toggle("active");
 
     let content = icon.parentNode.parentNode.nextElementSibling;
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
+    if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+    }
 };
 
-
-    
+function getCurrentDate() {
+    let a = new Date();
+    let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    let year = a.getFullYear();
+    let month = months[a.getMonth()];
+    let date = a.getDate();
+    let time = `${date} ${month} ${year}`;
+    return time;
+}

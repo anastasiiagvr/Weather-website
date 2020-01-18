@@ -56,7 +56,7 @@ a {
 /* header */
 
 .header {
-    background-image: url(../images/header-bg.png);
+    background-image: url(https://res.cloudinary.com/anastasiiagvr/image/upload/v1579383955/weather-page/header.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 70px;
@@ -216,7 +216,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(../images/cloud_bg.png);
+    background-image: url(https://res.cloudinary.com/anastasiiagvr/image/upload/v1579383952/weather-page/cloud-bg.png);
     background-repeat: no-repeat;
     background-position: top 158px left 37px;
 }
